@@ -1,0 +1,6 @@
+framework module Pods_ContainerViewControllers {
+  umbrella header "Pods-ContainerViewControllers-umbrella.h"
+
+  export *
+  module * { export * }
+}
