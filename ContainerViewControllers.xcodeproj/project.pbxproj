@@ -14,6 +14,10 @@
 		CD48FE93291DF46D004ACD65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD48FE91291DF46D004ACD65 /* Main.storyboard */; };
 		CD48FE95291DF478004ACD65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD48FE94291DF478004ACD65 /* Assets.xcassets */; };
 		CD48FE98291DF478004ACD65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD48FE96291DF478004ACD65 /* LaunchScreen.storyboard */; };
+		CD48FEA4291DF93F004ACD65 /* PageSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD48FEA3291DF93F004ACD65 /* PageSegmentView.swift */; };
+		CD48FEA6291DF977004ACD65 /* PageSegmentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD48FEA5291DF977004ACD65 /* PageSegmentCollectionViewCell.swift */; };
+		CD48FEA8291DF9F1004ACD65 /* GuideSlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD48FEA7291DF9F1004ACD65 /* GuideSlideView.swift */; };
+		CD48FEAA291DFA18004ACD65 /* TestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD48FEA9291DFA18004ACD65 /* TestTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		CD48FE94291DF478004ACD65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD48FE97291DF478004ACD65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD48FE99291DF478004ACD65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD48FEA3291DF93F004ACD65 /* PageSegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageSegmentView.swift; sourceTree = "<group>"; };
+		CD48FEA5291DF977004ACD65 /* PageSegmentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageSegmentCollectionViewCell.swift; sourceTree = "<group>"; };
+		CD48FEA7291DF9F1004ACD65 /* GuideSlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideSlideView.swift; sourceTree = "<group>"; };
+		CD48FEA9291DFA18004ACD65 /* TestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +64,6 @@
 				35EA27B6147617D1EFA8BF31 /* Pods-ContainerViewControllers.debug.xcconfig */,
 				AE0618B39443493836F66C1B /* Pods-ContainerViewControllers.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -84,6 +91,10 @@
 				CD48FE8B291DF46D004ACD65 /* AppDelegate.swift */,
 				CD48FE8D291DF46D004ACD65 /* SceneDelegate.swift */,
 				CD48FE8F291DF46D004ACD65 /* ViewController.swift */,
+				CD48FEA9291DFA18004ACD65 /* TestTableViewController.swift */,
+				CD48FEA7291DF9F1004ACD65 /* GuideSlideView.swift */,
+				CD48FEA3291DF93F004ACD65 /* PageSegmentView.swift */,
+				CD48FEA5291DF977004ACD65 /* PageSegmentCollectionViewCell.swift */,
 				CD48FE91291DF46D004ACD65 /* Main.storyboard */,
 				CD48FE94291DF478004ACD65 /* Assets.xcassets */,
 				CD48FE96291DF478004ACD65 /* LaunchScreen.storyboard */,
@@ -208,8 +219,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD48FE90291DF46D004ACD65 /* ViewController.swift in Sources */,
+				CD48FEA8291DF9F1004ACD65 /* GuideSlideView.swift in Sources */,
 				CD48FE8C291DF46D004ACD65 /* AppDelegate.swift in Sources */,
 				CD48FE8E291DF46D004ACD65 /* SceneDelegate.swift in Sources */,
+				CD48FEA6291DF977004ACD65 /* PageSegmentCollectionViewCell.swift in Sources */,
+				CD48FEAA291DFA18004ACD65 /* TestTableViewController.swift in Sources */,
+				CD48FEA4291DF93F004ACD65 /* PageSegmentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
