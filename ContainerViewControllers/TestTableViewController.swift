@@ -51,6 +51,8 @@ extension TestTableViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         cell.textLabel?.text = "\(indexPath.row)"
+        cell.textLabel?.textColor = .white
+        cell.backgroundColor = .black
         return cell
     }
 }

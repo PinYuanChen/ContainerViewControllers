@@ -19,16 +19,6 @@ class ViewController: UIViewController {
         bind()
     }
 
-    private let vc1 = TestTableViewController() --> {
-        $0.view.backgroundColor = .green
-    }
-    private let vc2 = UIViewController() --> {
-        $0.view.backgroundColor = .red
-    }
-    private let vc3 = UIViewController() --> {
-        $0.view.backgroundColor = .yellow
-    }
-    private lazy var vcs = [vc1, vc2, vc3]
     private let pageSegment = PageSegmentView(frame: .zero)
     private let slideView = GuideSlideView(frame: .zero)
     private let leftArrowButton = UIButton() --> {
@@ -41,7 +31,18 @@ class ViewController: UIViewController {
         $0.setTitleColor(.white, for: .normal)
         $0.setTitleColor(.lightGray, for: .disabled)
     }
-    private let pageControl = UIPageControl()
+    private let vc1 = TestTableViewController()
+    private let vc2 = UIViewController() --> {
+        $0.view.backgroundColor = .systemRed.withAlphaComponent(0.5)
+    }
+    private let vc3 = UIViewController() --> {
+        $0.view.backgroundColor = .systemPurple.withAlphaComponent(0.5)
+    }
+    private lazy var vcs = [vc1, vc2, vc3]
+    private let pageControl = UIPageControl() --> {
+        $0.currentPageIndicatorTintColor = .systemCyan.withAlphaComponent(0.4)
+        $0.pageIndicatorTintColor = .white
+    }
     private let disposeBag = DisposeBag()
 }
 
@@ -80,8 +81,6 @@ private extension ViewController {
     
     func setupPageControl() {
         pageControl.numberOfPages = vcs.count
-        pageControl.currentPageIndicatorTintColor = .yellow
-        pageControl.pageIndicatorTintColor = .white
         view.addSubview(pageControl)
         pageControl.snp.makeConstraints {
             $0.width.equalTo(300)
