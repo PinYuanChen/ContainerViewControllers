@@ -40,7 +40,7 @@ class ViewController: UIViewController {
     }
     private lazy var vcs = [vc1, vc2, vc3]
     private let pageControl = UIPageControl() --> {
-        $0.currentPageIndicatorTintColor = .systemCyan.withAlphaComponent(0.4)
+        $0.currentPageIndicatorTintColor = .systemBlue.withAlphaComponent(0.4)
         $0.pageIndicatorTintColor = .white
     }
     private let disposeBag = DisposeBag()
